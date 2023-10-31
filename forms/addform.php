@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Data</title>
+
+    <style>
+        table {
+            width: 25%;
+            border: 0;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #CCCCCC;
+        }
+    </style>
 </head>
 <body>
     <h1>Add Subject</h1>
