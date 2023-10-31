@@ -21,7 +21,7 @@
     <a href="../index.php">Home</a>
     <br/><br/>
     <form action="../functions/edit.php" method="post" name="form1">
-        <table>
+        <table border="0">
             <tr>
                 <td>Subject Code</td>
                 <td><input type="text" name="code" value="<?php echo $code;?>"></td>
