@@ -1,4 +1,4 @@
 <?php
-    $query = "SELECT * FROM tblsubjects";
+    $query = "SELECT * FROM tblsubject";
     $result = mysqli_query($dbc, $query);
 ?>
