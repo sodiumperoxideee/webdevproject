@@ -23,7 +23,7 @@
                 echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
             } 
             else {
-                $result = mysqli_query($dbc, "INSERT INTO tblsubject(subject_code, subject_name) VALUES('$code','$name')");
+                $result = mysqli_query($dbc, "INSERT INTO tblsubjects(subject_code, subject_name) VALUES('$code','$name')");
                 echo "<font color='green'>Data added succesfully.";
                 echo "<br/><a href='../index.php'>View Result</a>";
             }   
