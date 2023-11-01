@@ -1,4 +1,4 @@
 # webdevproject
-partners:
-CASIDO, SUNSHINE O.
+partners:<br>
+CASIDO, SUNSHINE O.<br>
 DELA CRUZ, LADY MAXINE A.
