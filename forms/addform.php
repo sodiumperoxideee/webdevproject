@@ -6,33 +6,79 @@
     <title>Add Data</title>
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #950101; 
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #e74c3c; 
+            font-size: 1.5em;
+            font-weight: 700;
+            font-family: 'Helvetica', sans-serif; 
+            transition: 0.3s;
+            display: block;
+            text-align: center;
+            padding: 15px; 
+        }
+        a:hover {
+            color: #630000; 
+        }
         table {
-            width: 25%;
-            border: 0;
+            width: 80%;
+            margin: 0 auto; /* Adjusted the margin to remove whitespace */
             border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         th, td {
-            border: 1px solid #CCCCCC;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #BD1616;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        td:last-child {
+            text-align: center;
+        }
+        .add-button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Add Subject</h1>
     <a href="../index.php">Home</a>
-    <br/><br/>
     <form action="../functions/add.php" method="post" name="form1">
         <table>
             <tr>
-                <td>Subject Code</td>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Action</th>
+            </tr>
+            <tr>
                 <td><input type="text" name="code"></td>
-            </tr>
-            <tr>
-                <td>Subject Name</td>
                 <td><input type="text" name="name"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" name="Submit" value="Add"></td>
+                <td><input type="submit" name="Submit" value="Add" class="add-button"></td>
             </tr>
         </table>
     </form>
