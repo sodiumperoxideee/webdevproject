@@ -38,7 +38,7 @@
                 echo "<td>".$res['Subject_Name']."</td>";
                 echo "<td><a href=\"forms/editform.php?id=".$res['Subject_ID']."\">Edit</a> |
                         <a href=\"forms/delete.php?id=".$res['Subject_ID']."\"
-                        onclick=\"return confirm('Are you sure you want to delete?')\"Delete</a></td>";
+                        onclick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
                 echo "</tr>";
             }    
         ?>
