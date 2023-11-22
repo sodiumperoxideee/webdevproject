@@ -19,6 +19,9 @@
             <th>ID</th>
             <th>Subject Code</th>
             <th>Subject Name</th>
+            <th>Syllabus ID</th>
+            <th>Syllabus Code</th>
+            <th>Syllabus Author</th>
             <th>Action</th>
         </tr>
         <?php
@@ -27,8 +30,11 @@
                 echo "<td>".$res['Subject_ID']."</td>";
                 echo "<td>".$res['Subject_Code']."</td>";
                 echo "<td>".$res['Subject_Name']."</td>";
+                echo "<td>".$res['Syllabus_ID']."</td>";
+                echo "<td>".$res['Syllabus_Code']."</td>";
+                echo "<td>".$res['Syllabus_Author']."</td>";
                 echo '<td><button class="edit-button" onclick="location.href=\'forms/editform.php?id='.$res['Subject_ID'].'\'">Edit</button> |
-                      <button class="delete-button" onclick="if(confirm(\'Are you sure you want to delete?\')){ location.href=\'functions/delete.php?id='.$res['Subject_ID'].'\'; }">Delete</button></td>';
+                        <button class="delete-button" onclick="if(confirm(\'Are you sure you want to delete?\')){ location.href=\'functions/delete.php?id='.$res['Subject_ID'].'\'; }">Delete</button></td>';
                 echo "</tr>";
             }    
         ?>
