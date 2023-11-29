@@ -63,7 +63,7 @@
                     echo '</div>';
                 } 
                 else {
-                    $result = mysqli_query($dbc, "<<UPDATE SELECT QUERY>>");
+                    $result = mysqli_query($dbc, "INSERT INTO tblsubjects(syllabus_code, syllabus_author) VALUES('$code','$author')");
                     echo '<div class="message-container">';
                     echo '<p class="success-message">Data added successfully.</p>';
                     echo '<br/><a href="../index.php">View Result</a>';
